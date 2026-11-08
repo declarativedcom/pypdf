@@ -747,7 +747,7 @@ class PdfReader(PdfDocCommon):
 
     def _basic_validation(self, stream: StreamType) -> None:
         """Ensure the stream is valid and not empty."""
-        stream.seek(0, os.SEEK_SET)
+        #stream.seek(0, os.SEEK_SET)
         try:
             header_byte = stream.read(5)
         except UnicodeDecodeError:
